@@ -1,7 +1,7 @@
 {
-  "name": "placeholder",
+  "name": "countries-api",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -37,6 +37,6 @@
     "vite": "^3.1.0",
     "vite-plugin-pwa": "^0.12.7"
   },
-  "author": "Jakub Pawelec",
+  "author": "Jakub Pawelec, Mateusz Perczak",
   "license": "MIT"
 }
