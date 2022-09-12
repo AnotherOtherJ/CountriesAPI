@@ -59,8 +59,6 @@ const GlobalTheme = () => {
           #root {
             display: flex;
             flex-direction: column;
-            align-content: center;
-            align-items: center;
             isolation: isolate;
             overflow: auto;
           }
