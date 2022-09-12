@@ -2,6 +2,7 @@
 logs
 *.log
 pnpm-debug.log*
+yarn.lock
 
 node_modules
 dist
