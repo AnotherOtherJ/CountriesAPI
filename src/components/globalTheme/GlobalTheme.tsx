@@ -55,6 +55,7 @@ const GlobalTheme = () => {
             font-family: "Nunito Sans", sans-serif;
             color: ${theme.font};
             background: ${theme.background};
+            font-size: 14px;
           }
           #root {
             display: flex;
