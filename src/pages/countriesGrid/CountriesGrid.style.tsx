@@ -12,5 +12,13 @@ export const StyledHeader = styled.header`
 `;
 
 export const StyledSection = styled.main`
+  margin-top: clamp(40px, 6vw, 50px);
   width: 100%;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  grid-row-gap: 65px;
+  grid-column-gap: 65px;
+  grid-template-columns: repeat(auto-fill, 270px);
+  grid-template-rows: repeat(auto-fill, 340px);
 `;
