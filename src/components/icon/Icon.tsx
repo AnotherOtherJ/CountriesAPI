@@ -1,8 +1,5 @@
 import StyledIcon from "./Icon.style";
-
-type IconProps = {
-  glyph: string;
-};
+import type { IconProps } from "./Icon.types";
 
 const Icon = ({ glyph }: IconProps): JSX.Element => {
   return <StyledIcon>{glyph}</StyledIcon>;
