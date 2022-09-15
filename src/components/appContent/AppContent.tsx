@@ -1,7 +1,7 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 
-import CountriesGrid from "@/pages/countriesGrid/CountriesGrid";
+import CountriesGrid from "@/components/countriesGrid/CountriesGrid";
 
 import GlobalTheme from "../globalTheme/GlobalTheme";
 import Nav from "../nav/Nav";
