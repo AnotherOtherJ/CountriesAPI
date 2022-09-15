@@ -7,6 +7,7 @@ const StyledSearch = styled.div`
   gap: 20px;
   height: 60px;
   flex: 1 1 290px;
+  font-size: 1.1rem;
   max-width: clamp(200px, 100%, 480px);
   background-color: ${({ theme: { element } }) => element};
   border-radius: 4px;
