@@ -1,8 +1,10 @@
-import type { PropsWithChildren } from "react";
+import styled from "@emotion/styled";
 
-import StyledPage from "./PageWrapper.style";
+const PageWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: clamp(20px, 6vw, 80px);
+`;
 
-const PageWrapper = ({ children }: PropsWithChildren): JSX.Element => {
-  return <StyledPage>{children}</StyledPage>;
-};
 export default PageWrapper;
