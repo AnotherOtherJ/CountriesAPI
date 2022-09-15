@@ -6,6 +6,7 @@ const StyledFilter = styled.div`
   align-items: center;
   border-radius: 4px;
   flex: 1 1 100px;
+  font-size: 1.1rem;
   max-width: 200px;
   background-color: ${({ theme: { element } }) => element};
   height: 60px;

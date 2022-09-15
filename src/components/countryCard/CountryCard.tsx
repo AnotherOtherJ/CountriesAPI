@@ -1,5 +1,5 @@
 import StyledCard from "./CountryCard.style";
-import type { CountryCardProps } from "./types";
+import type { CountryCardProps } from "./CountryCard.types";
 
 const CountryCard = ({
   capital,
@@ -11,7 +11,6 @@ const CountryCard = ({
   return (
     <StyledCard>
       <img src={flag} alt={`${countryName} flag`} />
-
       <div>
         <h2>{countryName}</h2>
         <p>Population: {population}</p>
