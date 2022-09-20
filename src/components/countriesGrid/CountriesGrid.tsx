@@ -1,3 +1,5 @@
+import { useMemo } from "react";
+
 import CountryCard from "@/components/countryCard/CountryCard";
 import Filter from "@/components/filter/Filter";
 import PageWrapper from "@/components/pageWrapper/PageWrapper";
@@ -8,7 +10,8 @@ import { StyledHeader, StyledSection } from "./CountriesGrid.style";
 
 const CountriesGrid = (): JSX.Element => {
   const { isLoading, isError, error, data } = useCountries();
-  console.log(data);
+
+  const countries = useMemo(() => data ?? [], [data]);
 
   if (isLoading) {
     return <div>Loading...</div>;
@@ -25,7 +28,7 @@ const CountriesGrid = (): JSX.Element => {
         <Filter />
       </StyledHeader>
       <StyledSection>
-        {data.map((country, index) => (
+        {countries.map((country, index) => (
           <CountryCard key={`country-${index}`} country={country} />
         ))}
       </StyledSection>
