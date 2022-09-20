@@ -1,18 +1,24 @@
 import styled from "@emotion/styled";
 
 export const StyledHeader = styled.header`
-  width: 100%;
   display: flex;
   justify-content: space-between;
   gap: 5px;
+  flex-wrap: wrap;
+  width: 100%;
   @media screen and (max-width: 480px) {
     gap: 40px;
   }
-  flex-wrap: wrap;
 `;
 
 export const StyledSection = styled.main`
-  margin-top: clamp(40px, 6vw, 50px);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 65px;
+  align-items: center;
+  justify-content: center;
+  padding-top: clamp(40px, 6vw, 50px);
+  /* margin-top: clamp(40px, 6vw, 50px);
   width: 100%;
   height: 100%;
   display: grid;
@@ -20,5 +26,5 @@ export const StyledSection = styled.main`
   grid-row-gap: 65px;
   grid-column-gap: 65px;
   grid-template-columns: repeat(auto-fill, 270px);
-  grid-template-rows: repeat(auto-fill, 340px);
+  grid-template-rows: repeat(auto-fill, 340px); */
 `;

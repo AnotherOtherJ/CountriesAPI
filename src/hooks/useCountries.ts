@@ -22,4 +22,5 @@ const useCountries = () => {
     return data;
   });
 };
+
 export default useCountries;
