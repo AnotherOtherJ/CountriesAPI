@@ -10,6 +10,7 @@ const StyledButton = styled.div`
   height: 30px;
   background-color: ${({ theme: { element } }) => element};
   border-radius: 3px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 `;
 
 export default StyledButton;
