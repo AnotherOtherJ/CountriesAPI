@@ -5,7 +5,8 @@ const StyledButton = styled.div`
   align-items: center;
   justify-content: center;
   gap: 10px;
-  width: 145px;
+  max-width: 130px;
+  padding: 0 25px;
   height: 30px;
   background-color: ${({ theme: { element } }) => element};
   border-radius: 3px;
