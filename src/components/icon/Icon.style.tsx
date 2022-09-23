@@ -1,8 +1,10 @@
 import styled from "@emotion/styled";
 
-const StyledIcon = styled.span`
+import type { StyledProps } from "./Icon.types";
+
+const StyledIcon = styled.span<StyledProps>`
   font-family: "Segoe Fluent Icons", "Segoe Fluent Icons";
-  font-size: 1.5rem;
+  font-size: ${({ iconSize }) => (iconSize ? `${iconSize}rem` : `1.1rem`)};
 `;
 
 export default StyledIcon;
