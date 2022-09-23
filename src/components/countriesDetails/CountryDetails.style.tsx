@@ -1,5 +1,7 @@
 import styled from "@emotion/styled";
 
+import StyledButton from "../button/Button";
+
 export const GridContainer = styled.div`
   display: grid;
   grid: repeat(7, auto) / repeat(2, 1fr);
@@ -18,6 +20,8 @@ export const GridHeading = styled.h1`
 export const GridParagraph = styled.p`
   display: flex;
   gap: 5px;
+  align-items: center;
+
   flex-wrap: wrap;
   @media screen and (max-width: 480px) {
     &:nth-of-type(5) {
@@ -32,17 +36,32 @@ export const GridParagraph = styled.p`
 `;
 
 export const Bold = styled.span`
-  font-weight: bold;
+  font-weight: 600;
 `;
 
 export const Flex = styled.div`
+  margin-top: 80px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: clamp(50px, 10vw, 150px);
+`;
+
+export const Something = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: clamp(20px, 6vw, 80px);
+  align-content: center;
+  flex-wrap: wrap;
+  font-size: 16px;
+
+  > ${StyledButton} {
+    height: 40px;
+  }
 `;
 
 export const Image = styled.img`
-  height: 400px;
+  aspect-ratio: 1.4/1;
   width: 550px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 `;

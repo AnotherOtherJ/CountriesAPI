@@ -1,14 +1,22 @@
 import StyledButton from "../button/Button";
 import Icon from "../icon/Icon";
 import PageWrapper from "../pageWrapper/PageWrapper";
-import { Flex, GridContainer, GridHeading, GridParagraph, Image } from "./CountryDetails.style";
+import {
+  Bold,
+  Flex,
+  GridContainer,
+  GridHeading,
+  GridParagraph,
+  Image,
+  Something,
+} from "./CountryDetails.style";
 
 // All it's hardcoded for now
 
 const CountryDetails = (): JSX.Element => (
-  <PageWrapper>
+  <Something>
     <StyledButton>
-      <Icon glyph="&#xEC52;" /> Back
+      <Icon glyph="&#xE0A6;" /> Back
     </StyledButton>
     <Flex>
       <Image
@@ -17,17 +25,38 @@ const CountryDetails = (): JSX.Element => (
       />
       <GridContainer>
         <GridHeading>Belgium</GridHeading>
-        <GridParagraph>Native name: Belgia</GridParagraph>
-        <GridParagraph>population: 11,319,511</GridParagraph>
-        <GridParagraph>Region: Europe</GridParagraph>
-        <GridParagraph>Sub Region: Western Europe</GridParagraph>
-        <GridParagraph>Capital: Brussels</GridParagraph>
-        <GridParagraph>Top level Domain: .be</GridParagraph>
-        <GridParagraph>Currencies: Euro</GridParagraph>
-        <GridParagraph>Languages: Dutch, French, German</GridParagraph>
-        <GridParagraph>Border Countries: France, Germany, Netherlands</GridParagraph>
+        <GridParagraph>
+          <Bold>Native name:</Bold> Belgia
+        </GridParagraph>
+        <GridParagraph>
+          <Bold>Population:</Bold> 11,319,511
+        </GridParagraph>
+        <GridParagraph>
+          <Bold>Region:</Bold> Europe
+        </GridParagraph>
+        <GridParagraph>
+          <Bold>Sub Region:</Bold> Western Europe
+        </GridParagraph>
+        <GridParagraph>
+          <Bold>Capital:</Bold> Brussels
+        </GridParagraph>
+        <GridParagraph>
+          <Bold>Top level Domain:</Bold> .be
+        </GridParagraph>
+        <GridParagraph>
+          <Bold>Currencies:</Bold> Euro
+        </GridParagraph>
+        <GridParagraph>
+          <Bold>Languages:</Bold> Dutch, French, German
+        </GridParagraph>
+        <GridParagraph>
+          <Bold>Border Countries:</Bold>
+          <StyledButton>France</StyledButton>
+          <StyledButton>Germany</StyledButton>
+          <StyledButton>Netherlands</StyledButton>
+        </GridParagraph>
       </GridContainer>
     </Flex>
-  </PageWrapper>
+  </Something>
 );
 export default CountryDetails;
