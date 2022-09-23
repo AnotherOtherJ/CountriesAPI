@@ -1,10 +1,14 @@
+import Icon from "../icon/Icon";
 import StyledNav from "./Nav.style";
 
 const Nav = (): JSX.Element => {
   return (
     <StyledNav>
       <h1>Were in the world?</h1>
-      <div>Dark mode</div>
+      <div>
+        <Icon glyph="&#xf0ce;" />
+        Dark mode
+      </div>
     </StyledNav>
   );
 };
