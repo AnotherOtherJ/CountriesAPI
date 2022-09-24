@@ -1,10 +1,11 @@
-import Icon from "../icon/Icon";
+import { SearchFilled } from "@fluentui/react-icons";
+
 import StyledSearch from "./Search.style";
 
 const Search = (): JSX.Element => {
   return (
     <StyledSearch>
-      <Icon glyph="&#xF78B;" />
+      <SearchFilled />
       <input placeholder="Search for a country..." type="search" />
     </StyledSearch>
   );

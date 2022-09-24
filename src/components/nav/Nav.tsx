@@ -1,4 +1,5 @@
-import Icon from "../icon/Icon";
+import { WeatherMoonFilled } from "@fluentui/react-icons";
+
 import StyledNav from "./Nav.style";
 
 const Nav = (): JSX.Element => {
@@ -6,7 +7,7 @@ const Nav = (): JSX.Element => {
     <StyledNav>
       <h1>Were in the world?</h1>
       <div>
-        <Icon glyph="&#xf0ce;" />
+        <WeatherMoonFilled />
         Dark mode
       </div>
     </StyledNav>

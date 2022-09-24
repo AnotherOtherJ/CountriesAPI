@@ -1,5 +1,6 @@
+import { ArrowLeft24Filled } from "@fluentui/react-icons";
+
 import StyledButton from "../button/Button";
-import Icon from "../icon/Icon";
 import PageWrapper from "../pageWrapper/PageWrapper";
 import {
   Bold,
@@ -16,7 +17,7 @@ import {
 const CountryDetails = (): JSX.Element => (
   <Something>
     <StyledButton>
-      <Icon glyph="&#xE0A6;" /> Back
+      <ArrowLeft24Filled /> Back
     </StyledButton>
     <Flex>
       <Image
