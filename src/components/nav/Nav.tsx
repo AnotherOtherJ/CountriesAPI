@@ -1,3 +1,4 @@
+import { ThemeButton } from "@components/themeButton/ThemeButton";
 import { WeatherMoonFilled } from "@fluentui/react-icons";
 
 import StyledNav from "./Nav.style";
@@ -6,10 +7,10 @@ const Nav = (): JSX.Element => {
   return (
     <StyledNav>
       <h1>Were in the world?</h1>
-      <div>
+      <ThemeButton>
         <WeatherMoonFilled />
         Dark mode
-      </div>
+      </ThemeButton>
     </StyledNav>
   );
 };

@@ -16,8 +16,7 @@ const GlobalTheme = () => {
             margin: 0;
           }
           html,
-          body,
-          #root {
+          body {
             height: 100%;
           }
           body {
@@ -62,6 +61,18 @@ const GlobalTheme = () => {
             flex-direction: column;
             isolation: isolate;
             overflow: auto;
+            width: 100%;
+            height: 100%;
+          }
+          scrollbar-width: thin;
+          scrollbar-color: ${`${theme.font} ${theme.background}`};
+          ::-webkit-scrollbar {
+            width: 10px;
+            background-color: ${theme.background};
+          }
+          ::-webkit-scrollbar-thumb {
+            background-color: ${theme.font};
+            border-radius: 4px;
           }
         `}
       />
