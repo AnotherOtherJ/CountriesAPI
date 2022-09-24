@@ -1,6 +1,7 @@
 import styled from "@emotion/styled";
+import { motion } from "framer-motion";
 
-const StyledCard = styled.div`
+const StyledCard = styled(motion.div)`
   display: flex;
   flex-direction: column;
   border-radius: 5px;

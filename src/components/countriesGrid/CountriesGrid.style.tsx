@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { motion } from "framer-motion";
 
 export const StyledHeader = styled.header`
   display: flex;
@@ -11,7 +12,7 @@ export const StyledHeader = styled.header`
   }
 `;
 
-export const StyledSection = styled.main`
+export const StyledSection = styled(motion.main)`
   display: flex;
   flex-wrap: wrap;
   gap: 65px;

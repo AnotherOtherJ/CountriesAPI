@@ -1,9 +1,9 @@
 import StyledCard from "./CountryCard.style";
 import type { CountryCardProps } from "./CountryCard.types";
 
-const CountryCard = ({ country }: CountryCardProps): JSX.Element => {
+const CountryCard = ({ country, ...rest }: CountryCardProps): JSX.Element => {
   return (
-    <StyledCard>
+    <StyledCard {...rest}>
       <img src={country.flags.svg} alt={`${country.name.common}-flag`} />
       <div>
         <h2>{country.name.common}</h2>

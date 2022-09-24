@@ -19,7 +19,7 @@ const AppContent = (): JSX.Element => {
     <>
       <GlobalTheme />
       <Nav />
-      <CountryDetails />
+      {/* <CountryDetails /> */}
       <QueryClientProvider client={queryClient}>
         <CountriesGrid />
         <ReactQueryDevtools initialIsOpen={false} />
