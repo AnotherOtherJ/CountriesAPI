@@ -15,7 +15,7 @@ export const StyledHeader = styled.header`
 export const StyledSection = styled(motion.main)`
   display: flex;
   flex-wrap: wrap;
-  gap: 65px;
+  gap: clamp(20px, 11vw, 60px);
   align-items: center;
   justify-content: center;
   padding-top: clamp(40px, 6vw, 50px);
