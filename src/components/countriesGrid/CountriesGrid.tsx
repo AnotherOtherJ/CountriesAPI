@@ -1,4 +1,5 @@
 import type { Variants } from "framer-motion";
+import { domAnimation, LazyMotion } from "framer-motion";
 import { useMemo } from "react";
 
 import CountryCard from "@/components/countryCard/CountryCard";
@@ -48,11 +49,13 @@ const CountriesGrid = (): JSX.Element => {
         <Search />
         <Filter />
       </StyledHeader>
-      <StyledSection initial="hidden" animate="visible" variants={variant}>
-        {countries.map((country, index) => (
-          <CountryCard key={`country-${index}`} country={country} variants={variants} />
-        ))}
-      </StyledSection>
+      <LazyMotion features={domAnimation}>
+        <StyledSection initial="hidden" animate="visible" variants={variant}>
+          {countries.map((country, index) => (
+            <CountryCard key={`country-${index}`} country={country} variants={variants} />
+          ))}
+        </StyledSection>
+      </LazyMotion>
     </PageWrapper>
   );
 };
