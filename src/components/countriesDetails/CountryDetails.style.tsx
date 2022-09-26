@@ -5,8 +5,8 @@ import StyledButton from "../button/Button";
 export const GridContainer = styled.div`
   display: grid;
   grid: repeat(7, auto) / repeat(2, 1fr);
-  grid-auto-flow: column;
   row-gap: 10px;
+  grid-auto-flow: column;
   @media screen and (max-width: 480px) {
     grid: repeat(10, auto) / 1fr;
   }
