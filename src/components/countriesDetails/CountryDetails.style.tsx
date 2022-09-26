@@ -21,7 +21,6 @@ export const GridParagraph = styled.p`
   display: flex;
   gap: 5px;
   align-items: center;
-
   flex-wrap: wrap;
   @media screen and (max-width: 480px) {
     &:nth-of-type(5) {
