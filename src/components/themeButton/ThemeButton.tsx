@@ -6,4 +6,5 @@ export const ThemeButton = styled.div`
   justify-content: center;
   gap: 10px;
   cursor: pointer;
+  user-select: none;
 `;
